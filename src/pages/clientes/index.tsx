@@ -11,7 +11,7 @@ export default function ClientePage() {
   return (<div>
     <Header />
     <Separator className="mt-24 shadow-border px-4" />
-    <div className="mt-4 px-4">
+    <div className="text-sm sm:text-lg mt-4 px-4">
       <div className="">
         <h1 className="font-bold uppercase">Clientes</h1>
       </div>

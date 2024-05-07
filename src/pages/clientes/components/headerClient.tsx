@@ -1,5 +1,5 @@
 export default function HeaderCardUser() {
-  return <div className="grid grid-cols-5 bg-indigo-400 font-semibold uppercase text-center justify-between items-center py-2 px-2 border rounded-md">
+  return <div className=" text-[12px] sm:text-lg grid grid-cols-5 bg-indigo-400 font-semibold uppercase text-center justify-between items-center py-2 px-2 border rounded-md">
     <div>telephone</div>
     <div>name</div>
     <div>saldo</div>

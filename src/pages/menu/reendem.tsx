@@ -6,6 +6,7 @@ import { ReactNode } from "react";
 import CardRendem from "./components/cardRendem";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import QrCodeRendem from "./components/qrCodeRendem";
+import { Drawer, DrawerContent, DrawerTrigger } from "@/components/ui/drawer";
 
 type Props = {
   children: ReactNode
@@ -13,11 +14,11 @@ type Props = {
 
 export default function Rendem({ children }: Props) {
   return (
-    <Dialog>
-      <DialogTrigger>
+    <Drawer>
+      <DrawerTrigger>
         {children}
-      </DialogTrigger>
-      <DialogContent className="w-[900px]">
+      </DrawerTrigger>
+      <DrawerContent className=" sm:w-[900px]">
         <h1>RESGATAR</h1>
         <Tabs className="w-full" defaultValue="manual">
           <TabsList className="w-full">
@@ -65,7 +66,7 @@ export default function Rendem({ children }: Props) {
           </TabsContent>
         </Tabs>
 
-      </DialogContent>
-    </Dialog>
+      </DrawerContent>
+    </Drawer>
   )
 }

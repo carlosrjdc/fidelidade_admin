@@ -10,14 +10,14 @@ type Props = {
 }
 
 export default function cardPremio({ id, imagem, description, pontos, title }: Props) {
-  return (<div className="grid grid-cols-5 text-center justify-between items-center py-2 px-2 border rounded-md">
+  return (<div className="grid grid-cols-4 sm:grid-cols-5 text-center justify-between items-center py-2 px-2 border rounded-md">
     <div>{id}</div>
-    <div className="flex items-center   ml-16 gap-4">
-      <img className="h-16 rounded-full w-16" alt="" src={imagem}/>
+    <div className="flex items-center   sm:ml-16 gap-4">
+      <img className="sm:h-16 sm:w-16 w-8 h-8 rounded-full " alt="" src={imagem}/>
       <div>{title}</div>
     </div>
 
-    <div>{description}</div>
+    <div className="sm:fixed hidden">{description}</div>
     <div>{pontos}</div>
 
     <div className="flex items-center justify-center"><CiMenuKebab /></div>

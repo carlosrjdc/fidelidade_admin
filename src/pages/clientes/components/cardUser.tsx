@@ -10,8 +10,8 @@ type Props = {
 
 export default function CardUser({ name, saldo, status, telephone }: Props) {
   return (<div className="grid grid-cols-5 text-center justify-between items-center py-2 px-2 border rounded-md">
-    <div>{telephone}</div>
-    <div>{name}</div>
+    <div className="text-[10px] sm:text-xl">{telephone}</div>
+    <div className="text-[10px] sm:text-xl">{name}</div>
     <div>{saldo}</div>
     {status ? <div className="flex items-center justify-center">
       <Badge className="bg-green-400 text-black">ativo</Badge>

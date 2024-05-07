@@ -11,8 +11,8 @@ type Props = {
 export default function CardRendem({ image, title, description, points }: Props) {
   return (
 
-    <div className=" w-48 rounded-xl border m-1">
-      <div className="bg-slate-700 text-white p-2">
+    <div className=" w-36 flex flex-col h-40  sm:w-48 rounded-xl border m-1">
+      <div className="flex-1 bg-slate-700 text-white p-2">
         <strong className="py-2">{title}</strong>
         <p className="text-xs py-2">{description}</p>
       </div>

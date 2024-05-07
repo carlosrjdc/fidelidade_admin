@@ -11,7 +11,7 @@ export default function PremioPage() {
   return (<div>
     <Header />
     <Separator className="mt-24 shadow-border px-4" />
-    <div className="mt-4 px-4">
+    <div className="mt-4 px-4 sm:text-lg text-sm">
       <div className="">
         <h1 className="font-bold uppercase">Premios</h1>
       </div>
